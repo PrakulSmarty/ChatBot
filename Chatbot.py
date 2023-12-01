@@ -105,16 +105,3 @@ while(flag==True):
     else:
         flag=False
         print("Praky: Bye! take care..")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
