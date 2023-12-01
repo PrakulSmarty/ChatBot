@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[51]:
+# In[ ]:
 
 
 import io
@@ -15,7 +15,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-# In[52]:
+# In[ ]:
 
 
 import nltk
@@ -23,22 +23,22 @@ from nltk.stem import WordNetLemmatizer
 nltk.download('popular', quiet=True)
 
 
-# In[53]:
+# In[ ]:
 
 
-f=open("C:/Users/praku/OneDrive/Desktop/chatbot.txt",'r',errors = 'ignore')
+f=open("C:/Users/prakul/Desktop/chatbot.txt",'r',errors = 'ignore')
 raw=f.read()
 raw = raw.lower()
 
 
-# In[54]:
+# In[ ]:
 
 
 sent_tokens = nltk.sent_tokenize(raw) 
 word_tokens = nltk.word_tokenize(raw)
 
 
-# In[55]:
+# In[ ]:
 
 
 lemmer = nltk.stem.WordNetLemmatizer()
@@ -50,7 +50,7 @@ def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
 
-# In[56]:
+# In[ ]:
 
 
 GREETING_INPUTS = ("hello", "hi", "greetings", "sup", "what's up","hey",)
@@ -62,7 +62,7 @@ def greeting(sentence):
             return random.choice(GREETING_RESPONSES)
 
 
-# In[59]:
+# In[ ]:
 
 
 def response(user_response):
@@ -83,7 +83,7 @@ def response(user_response):
         return Pixy_response
 
 
-# In[60]:
+# In[ ]:
 
 
 flag=True
@@ -105,16 +105,3 @@ while(flag==True):
     else:
         flag=False
         print("Pixy: Bye! take care..")
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
