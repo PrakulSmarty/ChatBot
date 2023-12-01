@@ -26,7 +26,7 @@ nltk.download('popular', quiet=True)
 # In[21]:
 
 
-f=open("C:/Users/praku/OneDrive/Desktop/chatbot.txt",'r',errors = 'ignore')
+f=open("C:/Users/prakul/Desktop/chatbot.txt",'r',errors = 'ignore')
 raw=f.read()
 raw = raw.lower()
 
